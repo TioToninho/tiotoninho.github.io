@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,62 +7,157 @@
 
     <!-- by: TioToninho -->
 
-    <title>Antonio Moura</title>
+    <title>Antonio Moura - Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 30px 0 15px;
+            color: #2d3748;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .about {
+            margin: 30px 0;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .projects {
+            margin: 40px 0;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-title {
+            font-size: 1.4rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            color: #718096;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #4299e1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        .social {
+            margin: 40px 0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+        }
+        .social-links a {
+            color: #4a5568;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #4299e1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1 align="center">Antonio Moura</h1>
-        <aside align="center">Software engineer and B.Sc. in Computer Science</aside>
+        <h1>Antonio Moura</h1>
+        <p>Software Engineer & B.Sc. in Computer Science</p>
     </header>
 
-    <h2 align="center">About me</h2>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a technology enthusiast always seeking to learn new things. With over 5 years of software development experience, I have a proven ability to work on complex projects and help build solid and scalable solutions.</p>
+        <p>I am excited to continue evolving my skills and collaborating on amazing projects. If you are looking for a highly skilled and technology-passionate developer, do not hesitate to contact me.</p>
+    </section>
 
-    <p>I am a technology enthusiast and always seeking to learn new things.
-        With over 2 years of software development experience, I have a proven
-        ability to work on complex projects and help build solid and scalable solutions.</p>
-    <p>I am excited to continue evolving my skills and collaborating on amazing projects.
-        If you are looking for a highly skilled and technology-passionate developer, do
-        not hesitate to contact me.</p>
+    <section class="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-card">
+            <h3 class="project-title">Levitate</h3>
+            <p class="project-desc">A blockchain-based donation tracking platform that enables complete transparency between donors and NGOs. The platform allows donors to track how their donations are used and enables NGOs to provide proof of resource allocation.</p>
+            <a href="https://github.com/TioToninho/levitate" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+        
+        <div class="project-card">
+            <h3 class="project-title">Secret Garden</h3>
+            <p class="project-desc">A property management system that facilitates the management of clients, properties, monthly calculations, and financial transfers. The application is divided into frontend (React/Vite) and backend (Python/FastAPI).</p>
+            <a href="https://github.com/TioToninho/secret_garden" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+        
+        <div class="project-card">
+            <h3 class="project-title">TP Cloud</h3>
+            <p class="project-desc">Developed in Flutter, TP Cloud is a solution for a private tutoring school that aims to schedule classes, facilitate communication between the teacher and the student, and help with the school's administration.</p>
+            <!-- <p>Available on: <a href="#" class="project-link">Play Store</a> | <a href="#" class="project-link">App Store</a></p> -->
+        </div>
+    </section>
 
-    <h2>My projects:</h2>
-
-    <ul>
-        <li>TP Cloud</li>
-        <ul>
-            <li>Can you download in: <a>Play Store</a> or <a>App Store</a>.</li>
-            <li>Can you access in this <a>link</a></li>
-            <p>Developed in Flutter, TP Cloud is a solution for a private tutoring school
-                that aims to schedule classes, facilitate communication between the teacher
-                and the student, and help with the school's administration.</p>
+    <section class="social">
+        <h2>Connect With Me</h2>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/antoniomouravs" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TioToninho" target="_blank">GitHub</a></li>
+            <li><a href="#" target="_blank">Dev.to</a></li>
         </ul>
-        <li><b>more coming soon ...</b></li>
-    </ul>
+    </section>
 
-    <h3>Articles:</h3>
-
-    <p><b>Coming Soon ...</b></p>
-
-    <h3>Videos</h3>
-
-    <p><b>Coming Soon ...</b></p>
-
-    <hr>
-
-    <h2>My bookmarks:</h2>
-
-    <h3>Find me:</h3>
-
-    <ul>
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">Dev.to</a></li>
-        <li><a href="">Youtube</a></li>
-        <li><a href="">Twitter</a></li>
-    </ul>
-    <hr>
-
-    <marquee>Feito com <3 por Antonio Moura</marquee>
-
+    <footer>
+        <p>Made with ❤️ by Antonio Moura | 2025</p>
+    </footer>
 </body>
 
 </html>
